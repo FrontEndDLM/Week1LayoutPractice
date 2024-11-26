@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  border: 4px solid lightgray;
+  width: 100px;
+  height: 100px;
+  /*big box at the header*/
+}
+
+.box2 {
+  border: 4px solid lightgray;
+  width: 30%;
+  height: 100px;
+  margin-bottom: 24px;
+  /*boxes in the body*/
+}
+
+.box-small {
+  width: 50px;
+  height: 50px;
+  padding-left: 24px;
+  /*adds space inside the element to resemble a button*/
+  margin-left: 24px;
+  /*adds space inside the border, adding space between the boxes*/
+}
+
+.box-wrapper {
+  display: flex;
+  align-items: center;
+  /*houses the three little boxes*/
+}
+
+.Layout1 {
+  border: 4px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  /*holds all four boxes within it*/
+  /*used as the header*/
+}
+
+.Layout2 {
+  border: 4px solid blueviolet;
+  padding: 24px 24px 0px 24px;
+  /*this is the body of the website*/
+  /*display: flex;
+  justify-content: center;
+  this will also move the boxes to the center if margin: 0 auto; was not there*/
+}
+
+.title {
+  border: 2px solid lightgrey;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+.boxwrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*wraps around the box2 boxes*/
+  /*allows the boxes to stack each other in rows and puts space between them*/
+}
+
+.row {
+  width: 100%;
+  max-width: 600px;
+  /*keeps the boxes in the website body from touching the sides*/
+  /*providing extra room on the row*/
+  margin: 0 auto;
+  /*centers the boxes in the container/parent*/
+}
+
+.Layout3 {
+  border: 4px solid cornflowerblue;
+  padding: 48px 48px 0 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box3 {
+  border: 4px solid lightgray;
+  height: 50px;
+  margin-bottom: 24px;
+}
+
+.box-large {
+  border: 4px solid lightgray;
+  width: 45%;
+  margin-bottom: 48px;
+}
+
+.box-wrapper3 {
+  width: 45%;
+  padding-bottom: 24px;
+  /*display: flex;
+    flex-direction: column;
+    this code isn't necessary, but it shows how to stack boxes on top of each other with display: block as the default*/
+}
+
+.Layout4 {
+  border: 4px solid palevioletred;
+  padding: 48px 48px 0 48px;
+  /*display: flex;
+  justify-content: space-between;
+  no longer needed because row2 has it now*/
+}
+
+.box4 {
+  border: 4px solid lightgray;
+  height: 50px;
+  width: 30%;
+  margin-bottom: 24px;
+  /*the 3 smaller boxes under box3 in the Layout4 container*/
+}
+
+.boxwrapper4-1 {
+  width: 45%;
+  padding-bottom: 24px;
+  /*houses the left side of the container (Layout4)*/
+}
+
+.boxwrapper4-2 {
+  display: flex;
+  justify-content: space-between;
+  /*wraps around the 3 tiny boxes (box4)*/
+}
+
+.row2 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  /*margin: 0 auto -24px auto;
+  can be used for removing pixels when the padding is uneven
+  not necessary here*/
+  display: flex;
+  justify-content: space-between;
+  /*display and just cont needed to be added to this row because there are 2 seperate columns that needed space between them*/
+}
